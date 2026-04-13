@@ -1,16 +1,9 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-// ─── EmailJS config ────────────────────────────────────────────────
-// 1. Sign up free at https://www.emailjs.com
-// 2. Create a service (Gmail / Outlook / etc.) → copy Service ID
-// 3. Create an email template → copy Template ID
-//    Template variables used: {{from_name}}, {{from_email}}, {{message}}, {{time}}
-// 4. Go to Account → API Keys → copy your Public Key
 const EMAILJS_SERVICE_ID  = "service_yxjq5mt";
 const EMAILJS_TEMPLATE_ID = "template_el5sc0h";
 const EMAILJS_PUBLIC_KEY  = "7KHDL2-fcO5D6ceu9";
-// ───────────────────────────────────────────────────────────────────
 
 const NAV_LINKS = ["Home", "Services", "Courses", "About", "Contact"];
 
