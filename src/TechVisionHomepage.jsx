@@ -17,10 +17,10 @@ const COURSES = [
 ];
 
 const SERVICES = [
-  { icon: "◈", title: "Live Mentorship", desc: "1-on-1 sessions with industry experts from top tech companies." },
-  { icon: "◉", title: "Job Placement", desc: "Dedicated placement cell with 200+ hiring partners across India." },
-  { icon: "◎", title: "Hands-on Projects", desc: "Build real-world portfolio projects from day one of the course." },
-  { icon: "◆", title: "Certification", desc: "Industry-recognized certificates accepted by global employers." },
+  { title: "Live Mentorship", desc: "1-on-1 sessions with industry experts from top tech companies." },
+  { title: "Job Placement", desc: "Dedicated placement cell with 200+ hiring partners across India." },
+  { title: "Hands-on Projects", desc: "Build real-world portfolio projects from day one of the course." },
+  { title: "Certification", desc: "Industry-recognized certificates accepted by global employers." },
 ];
 
 const TEAM = [
@@ -34,7 +34,16 @@ export default function TechVisionHomepage() {
   const [active, setActive] = useState("Home");
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("idle");
+  const [showEnrollModal, setShowEnrollModal] = useState(false);
 
+const [studentForm, setStudentForm] = useState({
+  fullName: "",
+  email: "",
+  phone: "",
+  course: "",
+  batch: "",
+  address: "",
+});
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setActive(id === "home" ? "Home" : id.charAt(0).toUpperCase() + id.slice(1));
@@ -128,9 +137,19 @@ export default function TechVisionHomepage() {
                 <span>{c.duration}</span>
                 <span>{c.level}</span>
               </div>
-              <div className="course-enroll" style={{ color: c.color }}>
-                Enroll now →
-              </div>
+              <div
+  className="course-enroll"
+  style={{ color: c.color }}
+  onClick={() => {
+    setStudentForm(prev => ({
+      ...prev,
+      course: c.title,
+    }));
+    setShowEnrollModal(true);
+  }}
+>
+  Enroll now →
+</div>
             </div>
           ))}
         </div>
@@ -227,7 +246,71 @@ export default function TechVisionHomepage() {
           </div>
         </div>
       </section>
+      {showEnrollModal && (
+  <div className="modal-overlay" onClick={() => setShowEnrollModal(false)}>
+    <div className="enroll-modal" onClick={(e) => e.stopPropagation()}>
+      <h2>Enroll for Course</h2>
 
+      <input
+        placeholder="Full Name"
+        value={studentForm.fullName}
+        onChange={(e) =>
+          setStudentForm({ ...studentForm, fullName: e.target.value })
+        }
+      />
+
+      <input
+        placeholder="Email"
+        value={studentForm.email}
+        onChange={(e) =>
+          setStudentForm({ ...studentForm, email: e.target.value })
+        }
+      />
+
+      <input
+        placeholder="Phone Number"
+        value={studentForm.phone}
+        onChange={(e) =>
+          setStudentForm({ ...studentForm, phone: e.target.value })
+        }
+      />
+
+      <input value={studentForm.course} readOnly />
+
+      <select
+        value={studentForm.batch}
+        onChange={(e) =>
+          setStudentForm({ ...studentForm, batch: e.target.value })
+        }
+      >
+        <option value="">Select Batch Timing</option>
+        <option>Morning</option>
+        <option>Afternoon</option>
+        <option>Evening</option>
+      </select>
+
+      <textarea
+        rows={3}
+        placeholder="Address"
+        value={studentForm.address}
+        onChange={(e) =>
+          setStudentForm({ ...studentForm, address: e.target.value })
+        }
+      />
+
+      <button className="btn-submit">
+        Submit Enrollment
+      </button>
+
+      <button
+        className="btn-outline"
+        onClick={() => setShowEnrollModal(false)}
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+)}
       <footer className="tv-footer">
         <div className="tv-footer-logo">Tech<span>Vision</span></div>
         <div>© 2025 TechVision. All rights reserved.</div>
