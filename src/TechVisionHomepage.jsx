@@ -8,10 +8,10 @@ const EMAILJS_PUBLIC_KEY  = "7KHDL2-fcO5D6ceu9";
 const NAV_LINKS = ["Home", "Services", "Courses", "About", "Contact"];
 
 const COURSES = [
-  { title: "Full Stack Web Development", duration: "6 months", level: "Beginner → Pro", tag: "Most Popular", color: "#0C447C", bg: "#E6F1FB" },
-  { title: "Data Science & Machine Learning", duration: "5 months", level: "Intermediate", tag: "Trending", color: "#085041", bg: "#E1F5EE" },
-  { title: "Cloud Architecture (AWS/Azure)", duration: "4 months", level: "Advanced", tag: "New", color: "#533AB7", bg: "#EEEDFE" },
-  { title: "UI/UX Design Fundamentals", duration: "3 months", level: "Beginner", tag: "", color: "#712B13", bg: "#FAECE7" },
+  { title: "Full Stack Web Development", duration: "6 months", level: "Beginner → Pro", color: "#0C447C", bg: "#E6F1FB" },
+  { title: "Data Science & Machine Learning", duration: "5 months", level: "Intermediate",  color: "#085041", bg: "#E1F5EE" },
+  { title: "Cloud Architecture (AWS/Azure)", duration: "4 months", level: "Advanced",  color: "#533AB7", bg: "#EEEDFE" },
+  { title: "UI/UX Design Fundamentals", duration: "3 months", level: "Beginner",  color: "#712B13", bg: "#FAECE7" },
   
 ];
 
