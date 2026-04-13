@@ -247,7 +247,7 @@ export default function TechVisionHomepage() {
 
   return (
     <>
-      <style>{style}</style>
+      {/* <style>{style}</style> */}
 
       <nav className="tv-nav">
         <div className="tv-logo">Tech<span>Vision</span></div>
