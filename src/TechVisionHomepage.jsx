@@ -30,8 +30,7 @@ const TEAM = [
 ];
 
 const style = `
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Sans:wght@300;400;500&display=swap');
-
+  
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body, #root { font-family: 'DM Sans', sans-serif; background: #F7F6F2; color: #1a1a1a; }
@@ -41,7 +40,7 @@ const style = `
     background: #F7F6F2; border-bottom: 1px solid rgba(0,0,0,0.08);
     padding: 0 5vw; display: flex; align-items: center; justify-content: space-between; height: 64px;
   }
-  .tv-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; }
+  .tv-logo { font-family: 'Arial', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px; }
   .tv-logo span { color: #185FA5; }
   .tv-navlinks { display: flex; gap: 32px; list-style: none; }
   .tv-navlinks a {
@@ -71,7 +70,7 @@ const style = `
     border-radius: 4px; padding: 4px 12px; margin-bottom: 20px; width: fit-content;
   }
   .hero-h1 {
-    font-family: 'Syne', sans-serif; font-size: clamp(40px, 6vw, 80px);
+    font-family: 'Arial', sans-serif; font-size: clamp(40px, 6vw, 80px);
     font-weight: 800; line-height: 1.05; letter-spacing: -2px;
     color: #111; max-width: 760px; margin-bottom: 24px;
   }
@@ -92,7 +91,7 @@ const style = `
   .btn-outline:hover { background: #E6F1FB; }
   .hero-stats { display: flex; gap: 48px; margin-top: 60px; flex-wrap: wrap; }
   .stat-item { }
-  .stat-num { font-family: 'Syne', sans-serif; font-size: 36px; font-weight: 800; color: #111; line-height: 1; }
+  .stat-num { font-family: 'Arial', sans-serif; font-size: 36px; font-weight: 800; color: #111; line-height: 1; }
   .stat-lbl { font-size: 13px; color: #888; margin-top: 4px; }
   .hero-decoration {
     position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
@@ -112,7 +111,7 @@ const style = `
     color: #185FA5; margin-bottom: 12px;
   }
   .section-h2 {
-    font-family: 'Syne', sans-serif; font-size: clamp(28px, 3.5vw, 44px);
+    font-family: 'Arial', sans-serif; font-size: clamp(28px, 3.5vw, 44px);
     font-weight: 800; letter-spacing: -1px; color: #111; margin-bottom: 12px;
   }
   .section-sub { font-size: 16px; color: #666; max-width: 480px; line-height: 1.6; font-weight: 300; }
@@ -125,7 +124,7 @@ const style = `
   }
   .service-card:hover { border-color: rgba(24,95,165,0.25); transform: translateY(-2px); }
   .service-icon { font-size: 24px; color: #185FA5; margin-bottom: 16px; display: block; }
-  .service-title { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+  .service-title { font-family: 'Arial', sans-serif; font-size: 17px; font-weight: 700; margin-bottom: 8px; }
   .service-desc { font-size: 14px; color: #666; line-height: 1.6; font-weight: 300; }
 
   .courses-section { background: #F7F6F2; }
@@ -140,7 +139,7 @@ const style = `
     display: inline-block; font-size: 11px; font-weight: 500; border-radius: 4px;
     padding: 3px 10px; width: fit-content;
   }
-  .course-title { font-family: 'Syne', sans-serif; font-size: 17px; font-weight: 700; line-height: 1.3; }
+  .course-title { font-family: 'Arial', sans-serif; font-size: 17px; font-weight: 700; line-height: 1.3; }
   .course-meta { display: flex; gap: 16px; font-size: 13px; color: #888; margin-top: 4px; }
   .course-enroll {
     margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.06);
@@ -161,9 +160,9 @@ const style = `
   .team-avatar {
     width: 48px; height: 48px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; flex-shrink: 0;
+    font-family: 'Arial', sans-serif; font-weight: 700; font-size: 16px; flex-shrink: 0;
   }
-  .team-name { font-family: 'Syne', sans-serif; font-size: 15px; font-weight: 700; }
+  .team-name { font-family: 'Arial', sans-serif; font-size: 15px; font-weight: 700; }
   .team-role { font-size: 13px; color: #888; margin-top: 2px; }
 
   .contact-section { background: #111; color: #fff; }
@@ -198,7 +197,7 @@ const style = `
     background: #0a0a0a; color: #555; font-size: 13px;
     padding: 24px 5vw; display: flex; justify-content: space-between; align-items: center;
   }
-  .tv-footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: #fff; font-size: 16px; }
+  .tv-footer-logo { font-family: 'Arial', sans-serif; font-weight: 800; color: #fff; font-size: 16px; }
   .tv-footer-logo span { color: #185FA5; }
 
   .spinner {
