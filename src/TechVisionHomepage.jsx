@@ -1,5 +1,6 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./TechVisionHomepage.css";
 
 const EMAILJS_SERVICE_ID  = "service_yxjq5mt";
 const EMAILJS_TEMPLATE_ID = "template_el5sc0h";
