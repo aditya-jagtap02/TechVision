@@ -8,18 +8,18 @@ const EMAILJS_PUBLIC_KEY  = "7KHDL2-fcO5D6ceu9";
 const NAV_LINKS = ["Home", "Services", "Courses", "About", "Contact"];
 
 const COURSES = [
-  { title: "Full Stack Web Development", duration: "6 months", level: "Beginner → Pro", tag: "Most Popular", color: "#0C447C", bg: "#E6F1FB" },
-  { title: "Data Science & Machine Learning", duration: "5 months", level: "Intermediate", tag: "Trending", color: "#085041", bg: "#E1F5EE" },
-  { title: "Cloud Architecture (AWS/Azure)", duration: "4 months", level: "Advanced", tag: "New", color: "#533AB7", bg: "#EEEDFE" },
-  { title: "UI/UX Design Fundamentals", duration: "3 months", level: "Beginner", tag: "", color: "#712B13", bg: "#FAECE7" },
+  { title: "Full Stack Web Development", duration: "6 months", level: "Beginner → Pro", color: "#0C447C", bg: "#E6F1FB" },
+  { title: "Data Science & Machine Learning", duration: "5 months", level: "Intermediate", color: "#085041", bg: "#E1F5EE" },
+  { title: "Cloud Architecture (AWS/Azure)", duration: "4 months", level: "Advanced",  color: "#533AB7", bg: "#EEEDFE" },
+  { title: "UI/UX Design Fundamentals", duration: "3 months", level: "Beginner",  color: "#712B13", bg: "#FAECE7" },
   
 ];
 
 const SERVICES = [
-  { icon: "◈", title: "Live Mentorship", desc: "1-on-1 sessions with industry experts from top tech companies." },
-  { icon: "◉", title: "Job Placement", desc: "Dedicated placement cell with 200+ hiring partners across India." },
-  { icon: "◎", title: "Hands-on Projects", desc: "Build real-world portfolio projects from day one of the course." },
-  { icon: "◆", title: "Certification", desc: "Industry-recognized certificates accepted by global employers." },
+  { title: "Live Mentorship", desc: "1-on-1 sessions with industry experts from top tech companies." },
+  { title: "Job Placement", desc: "Dedicated placement cell with 200+ hiring partners across India." },
+  { title: "Hands-on Projects", desc: "Build real-world portfolio projects from day one of the course." },
+  { title: "Certification", desc: "Industry-recognized certificates accepted by global employers." },
 ];
 
 const TEAM = [
