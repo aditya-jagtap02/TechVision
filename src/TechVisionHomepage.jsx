@@ -12,8 +12,7 @@ const COURSES = [
   { title: "Data Science & Machine Learning", duration: "5 months", level: "Intermediate", tag: "Trending", color: "#085041", bg: "#E1F5EE" },
   { title: "Cloud Architecture (AWS/Azure)", duration: "4 months", level: "Advanced", tag: "New", color: "#533AB7", bg: "#EEEDFE" },
   { title: "UI/UX Design Fundamentals", duration: "3 months", level: "Beginner", tag: "", color: "#712B13", bg: "#FAECE7" },
-  { title: "Cybersecurity Essentials", duration: "4 months", level: "Intermediate", tag: "", color: "#633806", bg: "#FAEEDA" },
-  { title: "DevOps & CI/CD Pipelines", duration: "3 months", level: "Advanced", tag: "", color: "#3C3489", bg: "#EEEDFE" },
+  
 ];
 
 const SERVICES = [
