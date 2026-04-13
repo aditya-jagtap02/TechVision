@@ -353,7 +353,7 @@ export default function TechVisionHomepage() {
             </div>
             <div className="contact-info-item">
               <span className="contact-info-label">Phone</span>
-              <span className="contact-info-val">+91 98765 43210</span>
+              <span className="contact-info-val">+91 1234567890</span>
             </div>
             <div className="contact-info-item">
               <span className="contact-info-label">Location</span>
