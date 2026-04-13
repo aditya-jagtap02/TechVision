@@ -24,7 +24,7 @@ const SERVICES = [
 ];
 
 const TEAM = [
-  { initials: "AK", name: "Pranav Thorat", role: "CEO & Founder", color: "#185FA5", bg: "#E6F1FB" },
+  { initials: "AK", name: "Akash Konade", role: "CEO & Founder", color: "#185FA5", bg: "#E6F1FB" },
   { initials: "PS", name: "Priya Sharma", role: "Head of Curriculum", color: "#0F6E56", bg: "#E1F5EE" },
   { initials: "RV", name: "Rohit Verma", role: "Lead Instructor", color: "#534AB7", bg: "#EEEDFE" },
 ];
