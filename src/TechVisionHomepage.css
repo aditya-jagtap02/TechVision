@@ -115,7 +115,41 @@
     font-size: 13px; font-weight: 500; cursor: pointer;
     display: flex; align-items: center; gap: 6px;
   }
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
+.enroll-modal {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.enroll-modal h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.enroll-modal input,
+.enroll-modal select,
+.enroll-modal textarea {
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
   .about-section { background: #fff; }
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; margin-top: 48px; }
   @media(max-width:700px) { .about-grid { grid-template-columns: 1fr; } }
